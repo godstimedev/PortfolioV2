@@ -17,8 +17,11 @@ const NavLink = (props: PropTypes) => {
 	return (
 		<Link
 			href={link}
-			className={`text-lg flex items-center gap-2 text-white p-2 rounded-md hover:bg-accent ${
-				isActive ? 'text-primary bg-primary' : ''
+			prefetch={true}
+			className={`text-lg flex items-center gap-2 p-3 rounded-lg transition-all duration-300 ${
+				isActive
+					? 'bg-primary text-primary-foreground shadow-md scale-105'
+					: 'text-foreground hover:bg-accent hover:scale-105 hover:shadow-sm'
 			}`}
 		>
 			{children}

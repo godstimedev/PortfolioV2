@@ -1,0 +1,56 @@
+{
+	"name": "Godstime Agholor - Portfolio",
+	"short_name": "GT Portfolio",
+	"description": "Software Engineer Portfolio - Godstime Agholor",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#1e1b3e",
+	"theme_color": "#4ade80",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+			"src": "/icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "/screenshot-wide.png",
+			"sizes": "1280x720",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Portfolio Homepage - Desktop"
+		},
+		{
+			"src": "/screenshot-narrow.png",
+			"sizes": "750x1334",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Portfolio Homepage - Mobile"
+		}
+	],
+	"categories": ["portfolio", "developer", "software engineer"],
+	"lang": "en",
+	"dir": "ltr"
+}
+

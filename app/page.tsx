@@ -1,32 +1,38 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import { BriefcaseBusiness, MessageCircle } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<section className="p-4 flex flex-col gap-4">
-			<h1>
-				{'</>'} <br />
-				<span className="text-gray-300">Hey there, I am</span> <br />
+		<section className="flex flex-col gap-4 animate-fade-in">
+			<h1 className="animate-slide-in-left">
+				{/* {'</>'} <br /> */}
+				👋 <br />
+				<span className="text-gray-300">Hey there, I am </span> <br />
 				Godstime Agholor <br />
-				{'</>'}
 			</h1>
 
-			<p>
-				I'm a software engineer with over 5 years of experience. I love building cool and useful digital
-				products. I'm a problem-solver and enjoy finding clever and simple ways to make things work well
-				for users. I can work on all parts of a software project, from the user interface to the inner
-				workings. My goal is to create well-built systems that people love to use. I'm always learning
-				new things, and I'm especially interested in machine learning, artificial intelligence, and the
-				Internet of Things.
+			<p className="animate-slide-in-right">
+				A versatile engineer with over 4 years of experience building responsive, user-friendly digital
+				products. I enjoy solving problems, simplifying complex workflows, and creating seamless
+				experiences that people love to use. <br />
+				My goal is simple: to craft digital products that people enjoy using and businesses can rely on.
 			</p>
 
-			<div className="flex items-center gap-4">
-				<Button>
-					View Projects <BriefcaseBusiness />
+			<div className="flex flex-wrap items-center gap-4 mt-8 animate-fade-in">
+				<Button size={'xl'} asChild className="group">
+					<Link href="/projects">
+						View Projects{' '}
+						<BriefcaseBusiness size={24} className="ml-2 group-hover:scale-110 transition-transform" />
+					</Link>
 				</Button>
 
-				<Button>
-					Send Message <MessageCircle />
+				<Button size={'xl'} variant={'secondary'} asChild className="group">
+					<Link href="/contact">
+						Hire me{' '}
+						<MessageCircle size={24} className="ml-2 group-hover:scale-110 transition-transform" />
+					</Link>
 				</Button>
 			</div>
 		</section>
