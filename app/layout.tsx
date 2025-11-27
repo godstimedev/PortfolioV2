@@ -4,6 +4,7 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import Sidebar from '@/components/Sidebar';
 import Header from '@/components/Header';
 import AnimatedBackground from '@/components/AnimatedBackground';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
 	title: 'Godstime Agholor | Software Engineer',
@@ -50,6 +51,7 @@ export default function RootLayout({
 			</head>
 			<body suppressHydrationWarning>
 				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+					<Analytics />
 					<AnimatedBackground />
 					<Header />
 
