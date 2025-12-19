@@ -5,6 +5,7 @@ import Sidebar from '@/components/Sidebar';
 import Header from '@/components/Header';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
 	title: 'Godstime Agholor | Software Engineer',
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 	keywords: [
 		'Software Engineer',
 		'Frontend Developer',
+		'Frontend Engineer',
 		'React',
 		'Next.js',
 		'TypeScript',
@@ -52,6 +54,7 @@ export default function RootLayout({
 			<body suppressHydrationWarning>
 				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
 					<Analytics />
+					<SpeedInsights />
 					<AnimatedBackground />
 					<Header />
 
